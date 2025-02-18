@@ -1,0 +1,75 @@
+/* Import Google Font for a vintage touch */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@300;400&display=swap');
+
+/* Aesthetic Vintage Background */
+body {
+    background: linear-gradient(to bottom, #e6d5b8, #c4a484);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Centering the content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Vintage-style card (Polaroid effect) */
+.object {
+    background: #fdf6eb; /* Warm paper color */
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 380px;
+    width: 90%;
+    box-shadow: 0px 6px 18px rgba(102, 77, 58, 0.4);
+    border: 2px solid #d6b187;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.object:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(102, 77, 58, 0.5);
+}
+
+/* Vintage framed image (Polaroid style) */
+.object img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #d6b187;
+    box-shadow: 2px 2px 15px rgba(102, 77, 58, 0.3);
+    margin-bottom: 15px;
+}
+
+/* Elegant text styling */
+.object p {
+    font-size: 18px;
+    color: #5a3e2b;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .object {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .object p {
+        font-size: 16px;
+    }
+}
